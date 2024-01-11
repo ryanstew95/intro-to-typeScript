@@ -1,3 +1,8 @@
+export interface Dog {
+  breed: string;
+  name: string;
+}
+
 interface  User {
   id?: number;
   username: string;
@@ -5,6 +10,7 @@ interface  User {
   age: number;
   bff?: User;
   friends?: User[];
+  pet?: Dog;
 }
 
 const myObj: User = { 
